@@ -15,4 +15,6 @@ while True:
         randomNum = str(random.randint[1,3])
         prng.seek(0)
         prng.write(randomNum)
+    else:
+        continue
     prng.close()
