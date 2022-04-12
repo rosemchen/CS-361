@@ -9,7 +9,7 @@ import time
 while True:
 
     #request for input
-    userinput = input("1 to generate new image or 2 to exit: ")
+    userinput = int(input("1 to generate new image or 2 to exit: "))
     if userinput == 1:
         prngwrite = open('prng-service.txt', 'w')    #open 'prng-service.txt' file
         prngwrite.write('run')                     #write 'run' in file
