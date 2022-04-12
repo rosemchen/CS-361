@@ -6,7 +6,7 @@ import time
 random.seed()   #initialize rng
 while True:
     #print("#21")
-    time.sleep(1)       #sleep for one second
+    time.sleep(3)       #sleep for one second
     #print("#22")
     prng = open('prng-service.txt', 'r')    #open prng-service.txt file
     #print("#23")
