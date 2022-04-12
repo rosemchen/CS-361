@@ -30,7 +30,7 @@ while True:
         readandoutput.close()
         print(f"{writepath}")
 
-    elif input == 2:
+    elif userinput == 2:
         exit
 
     else:
