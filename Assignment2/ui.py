@@ -13,20 +13,21 @@ while True:
     if userinput == 1:
         prngwrite = open('prng-service.txt', 'w')    #open 'prng-service.txt' file
         prngwrite.write('run')                     #write 'run' in file
-        random = prngwrite.readline()
-        time.sleep(5)                           #sleep five sec
         prngwrite.close()
+        time.sleep(5)                           #sleep five sec for prng.py
+
+        prngread = open('prng-service.txt', 'r')        #read the random number generated
+        number = prngread.readline()
+        prngread.close()
 
         imagewrite = open('image-service.txt', 'w')
-        imagewrite.write(random)
-        time.sleep(5)
+        imagewrite.write(number)
         imagewrite.close()
+        time.sleep(5)
 
         readandoutput = open('image-service.txt', 'r')
         writepath = readandoutput.readline()
-
         readandoutput.close()
-
         print(f"{filepath}\n")
 
     elif input == 2:
