@@ -5,3 +5,10 @@
 import random
 import time
 
+while True:
+    time.sleep(1)   #sleep for one second
+
+    image = open('image-service.txt', 'r')  #open "image-service.txt"
+    imageNum = image.readline()     #read file entry
+
+    if imageNum == 'run':      #if entry file "run"
