@@ -27,10 +27,10 @@ while True:
 
         readandoutput.close()
 
-        print(f"{filepath}"\n)
+        print(f"{filepath}\n")
 
     elif input == 2:
-        return
+        exit
 
     else:
         print(f"try again\n")
