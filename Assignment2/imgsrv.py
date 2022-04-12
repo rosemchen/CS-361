@@ -15,5 +15,5 @@ while True:
         imageNum = int(imageNum)
         path = open('image-service.txt', 'w')  #write in file
         path.write(f"/Users/RMC/PycharmProjects/CS-361/Assignment2/images/"
-                   f"{imageNum}.jpg\n")     #write file path
+                   f"{imageNum}.jpeg\n")     #write file path
         path.close()
