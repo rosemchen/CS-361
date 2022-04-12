@@ -28,7 +28,7 @@ while True:
         readandoutput = open('image-service.txt', 'r')
         writepath = readandoutput.readline()
         readandoutput.close()
-        print(f"{filepath}")
+        print(f"{writepath}\n")
 
     elif input == 2:
         exit
